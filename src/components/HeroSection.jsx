@@ -7,9 +7,9 @@ import "../app/globals.css";
 
 export default function HeroSection() {
   return (
-    <section id='home' className="relative mx-auto">
+    <section id='home' className="relative mx-auto scroll-mt-30">
 
-      <div className="grid rounded-[10px] max-w-178 max-h-105 grid-flow-row-dense grid-cols-5 grid-rows-6 gap-5 items-cente   md:grid-flow-auto  ">
+      <div className="grid rounded-[10px] max-w-178 grid-flow-row-dense grid-cols-5 grid-rows-6 gap-5 items-cente   md:grid-flow-auto  ">
         <div className="p-10 row-span-6 bg-[var(--card_color)] col-span-3 space-y-5  rounded-[10px] border border-[var(--light_gray)] text-[var(--light_gray)] flex flex-col justify-between gap-6 ">
           <h1 className="text-white text-5xl/[64px]  font-semibold m-0">Nilay Manekar</h1>
           <div className="space-y-0.5 ">  

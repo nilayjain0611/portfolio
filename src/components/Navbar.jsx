@@ -74,7 +74,7 @@ export default function Navbar() {
           {navItems.map((item) => (
             <li key={item.id} className="relative">
               {activeSection === item.id && (
-                <span className="absolute -left-[13px] top-1/2 -translate-y-1/2 w-[8px] h-[8px] bg-[var(--highlight)] rounded-full" />
+                <span className="absolute animate-pulse -left-[13px] top-1/2 -translate-y-1/2 w-[8px] h-[8px] bg-[var(--highlight)] rounded-full" />
               )}
               <Link href={`#${item.id}`} className="lowercase">
                 {item.label}
@@ -85,7 +85,7 @@ export default function Navbar() {
       </nav>
 
       {/* Mobile Navbar */}
-      <nav className="md:hidden fixed py-6 top-0 left-0 right-0 z-50">
+      <nav className="md:hidden fixed  top-0 left-0 right-0 z-50 bg-[var(--background))]">
         <div className="max-w-[710px] mx-auto px-6  flex items-center justify-between h-[60px]">
           <Image 
             src="/Logo.svg" 

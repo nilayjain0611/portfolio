@@ -6,8 +6,6 @@
   --card_color: #313131;
   --highlight: #FF861A;
 }
-  
-
 
 @media (prefers-color-scheme: dark) {
   :root {
