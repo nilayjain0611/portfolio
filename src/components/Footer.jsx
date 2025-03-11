@@ -12,13 +12,13 @@ const Footer = () => {
 
             <div className="social-links flex justify-between items-center gap-5">
               <Link href="https://linkedin.com/in/nilayjain0611" target="_blank">
-                <Image src="icons/linkedin.svg" alt="Logo" width={30} height={30} />
+                <Image src="/icons/linkedin.svg" alt="Logo" width={30} height={30} />
               </Link>
               <Link href="https://github.com/nilayjain0611" target="_blank">
-                <Image src="icons/github.svg" alt="Logo" width={30} height={30} />
+                <Image src="/icons/github.svg" alt="Logo" width={30} height={30} />
               </Link>
               <Link href="https://x.com/nilayjain__" target="_blank">
-                <Image src="icons/X.svg" alt="Logo" width={30} height={30} />
+                <Image src="/icons/X.svg" alt="Logo" width={30} height={30} />
               </Link>
 
             </div>

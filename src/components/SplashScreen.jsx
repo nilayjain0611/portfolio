@@ -43,7 +43,7 @@ export default function SplashScreen({ onFinish }) {
             }}
           >
             <Image
-              src="/logo.svg" // Replace with your logo path
+              src="/Logo.svg" // Replace with your logo path
               alt="Brand Logo"
               width={150}
               height={150}
