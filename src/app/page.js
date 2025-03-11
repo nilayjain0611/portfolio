@@ -22,6 +22,7 @@ export default function Home() {
         <ScaleIn>
           <StaggerContainer>
             <div className="relative flex flex-col items-center gap-y-15 pb-2 mx-auto pt-20 md:pt-0">
+
               <Navbar />
               <HeroSection />
               <Experience />
@@ -29,6 +30,7 @@ export default function Home() {
               <Skills />
               <ProjectsSection />
               <Footer />
+              
             </div>
            </StaggerContainer>
          </ScaleIn>

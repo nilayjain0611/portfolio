@@ -68,7 +68,7 @@ export default function Navbar() {
   return (
     <>
       {/* Desktop Navbar */}
-      <nav className="hidden realtive md:flex sticky top-3 mx-auto w-178 h-[60px] items-center justify-between bg-[var(--card_color)] border border-[var(--light_gray)] text-[var(--light_gray)] text-[18px] font-light rounded-full px-[53px] py-[14px] z-50">
+      <nav className="hidden  md:flex fixed top-3 mx-auto w-full max-w-178 h-[60px] items-center justify-between bg-[var(--card_color)] border border-[var(--light_gray)] text-[var(--light_gray)] text-[18px] font-light rounded-full px-[53px] py-[14px] z-50">
         <Image src="/Logo.svg" alt="Logo" width={82} height={32} />
         <ul className="flex gap-[35px]">
           {navItems.map((item) => (
@@ -85,7 +85,7 @@ export default function Navbar() {
       </nav>
 
       {/* Mobile Navbar */}
-      <nav className="md:hidden fixed  top-0 left-0 right-0 z-50 bg-[var(--background))]">
+      <nav className="md:hidden  fixed  top-0 left-0 right-0 z-50 bg-[var(--background))]">
         <div className="max-w-[710px] mx-auto px-6  flex items-center justify-between h-[60px]">
           <Image 
             src="/Logo.svg" 

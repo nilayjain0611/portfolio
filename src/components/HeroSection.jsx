@@ -9,7 +9,7 @@ import FadeIn from "./motion/FadeIn";
 export default function HeroSection() {
   return (
     <FadeIn>
-      <section id='home' className="scroll-mt-30  max-w-178 mx-10 ">
+      <section id='home' className="scroll-mt-30  max-w-178 mx-10 mt-30 ">
         <div className="md:grid rounded-[10px] max-w-178 md:grid-flow-row-dense md:grid-cols-5 md:grid-rows-6 md:gap-5    md:grid-flow-auto flex flex-col items-stretch gap-6 ">
           <div className="p-10 row-span-6 bg-[var(--card_color)] col-span-3 space-y-5  rounded-[10px] border border-[var(--light_gray)] text-[var(--light_gray)] flex flex-col justify-between gap-6  ">
             <h1 className="text-white text-5xl/[64px]  font-semibold m-0">Nilay Manekar</h1>
