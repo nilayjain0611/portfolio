@@ -12,8 +12,8 @@ const Experience = () => {
 
   return (
     <FadeIn>
-    <section id="experience" className="mx-10 md:w-178 max-w-178 space-y-10 scroll-mt-20">
-      <h1 className="text-[var(--light_gray)] text-2xl font-semibold">
+    <section id="experience" className=" mx-10 md:w-178  max-w-178 space-y-10 scroll-mt-20">
+      <h1 className="text-[var(--light_gray)] text-2xl font-semibold w-full">
         experience<span className="text-[var(--highlight)]"> .</span>
       </h1>
 

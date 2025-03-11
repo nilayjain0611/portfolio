@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function ProjectCard({ title, desc, image, techStack, sourceCode }) {
+export default function ProjectCard({ title, desc, image, techStack, sourceCode, live }) {
   return (
     <div  className="bg-transparenta border border-[var(--light_gray)] rounded-2xl overflow-hidden shadow-md transition-shadow duration-300 p-5 flex flex-col justify-between gap-6  group">
       {/* Card Image */}
@@ -21,16 +21,28 @@ export default function ProjectCard({ title, desc, image, techStack, sourceCode 
           ))}
         </div>
       </div>
-      <div className="w-28">
+
+      <div className="flex gap-2 ">
         
         <Link 
             href={sourceCode} 
             target="_blank" 
-            className=" flex items-center justify-center gap-1 text-[var(--background)] bg-[var(--light_gray)] text-sm font-light py-1 px-4 rounded-lg group-hover:text-[var(--background)] group-hover:bg-[var(--highlight)] "
+            className="w-28 flex items-center justify-center gap-1 text-[var(--background)] bg-[var(--light_gray)] text-sm font-light py-1 px-4 rounded-lg group-hover:text-[var(--background)] group-hover:bg-[var(--highlight)] "
             >
                 <Image src="icons/githubDark.svg" width={20} height={20} alt="GitHub" style={{ width: "auto", height: "auto" }}  className="group-hover:fill-[var(--highlight)]"/>
             <span>source</span>
         </Link>
+
+        { live && <Link 
+            href={live} 
+            target="_blank" 
+            className="w-18 flex items-center justify-center gap-2 text-[var(--background)] bg-[var(--light_gray)] text-sm font-light py-1 px-4 rounded-lg "
+            >
+                <Image src="icons/live.svg" width={20} height={20} alt="GitHub" style={{ width: "auto", height: "auto" }}  className="group-hover:fill-[var(--highlight)]"/>
+            <span>live</span>
+        </Link> }
+        
+
 
         </div>
     </div>
