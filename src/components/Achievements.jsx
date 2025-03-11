@@ -13,7 +13,7 @@ const Achievements = () => {
   return (
 
     <section id='about' className='mx-10 md:w-178 max-w-178 space-y-10 scroll-mt-20 '>
-        <h1 className="text-[var(--light_gray)] text-2xl font-semibold">achievements<span className="text-[var(--highlight)]"> .</span></h1>
+        <h1 className="text-[var(--light_gray)] text-2xl font-semibold">achievements<span className="text-[var(--highlight)]"> & </span>volunteering<span className="text-[var(--highlight)]"> .</span></h1>
 
         <div className='md:pl-15 md:pr-35 bg-[var(--card_color)] border border-[var(--light_gray)] rounded-xl w-full relative grid grid-flow-col-dense grid-cols-1 px-5'>
             

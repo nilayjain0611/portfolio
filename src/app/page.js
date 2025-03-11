@@ -1,4 +1,5 @@
 import Achievements from "@/components/Achievements";
+import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import HeroSection from "@/components/HeroSection";
 import Navbar from "@/components/Navbar";
@@ -16,6 +17,7 @@ export default function Home() {
         <Achievements />
         <Skills />
         <ProjectsSection />
+
     </div>
     </>
   );
