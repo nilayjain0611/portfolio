@@ -33,7 +33,7 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-    < section id="projects"  className="mx-10 max-w-178 space-y-10 scroll-mt-20">
+    < section id="projects"  className="mx-10 max-w-178 space-y-10 scroll-mt-20 scroll-smooth">
       <h1 className="text-[var(--light_gray)] text-2xl font-semibold">projects<span className="text-[var(--highlight)]"> .</span></h1>
       <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6">
       {projects.map((project, index) => (
