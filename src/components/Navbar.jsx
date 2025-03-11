@@ -93,6 +93,7 @@ export default function Navbar() {
             width={60} 
             height={24} 
             className="w-[60px] h-auto"
+            priority={true}
           />
           <button 
             ref={hamburgerRef} // Assign ref here

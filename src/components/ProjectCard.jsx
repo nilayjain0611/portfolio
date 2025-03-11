@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export default function ProjectCard({ title, desc, image, techStack, sourceCode }) {
   return (
-    <div  className="bg-transparenta border border-[var(--light_gray)] rounded-2xl overflow-hidden shadow-md hover:shadow-[5px_5px_0px_0px_#1a1a1a,_7px_7px_0px_0px_var(--highlight)] transition-shadow duration-300 p-5 flex flex-col justify-between gap-6  group">
+    <div  className="bg-transparenta border border-[var(--light_gray)] rounded-2xl overflow-hidden shadow-md transition-shadow duration-300 p-5 flex flex-col justify-between gap-6  group">
       {/* Card Image */}
       <div className="w-full h-45 relative transition-all duration-300">
-        <Image src={image} alt={title}  className="rounded-lg" objectFit="cover" fill   />
+        <Image src={image} alt={title}  className="rounded-lg"  style={{ objectFit: "cover" }}  fill   />
       </div>
 
       <div className=" flex flex-col gap-2 justify-self-start">
@@ -28,7 +28,7 @@ export default function ProjectCard({ title, desc, image, techStack, sourceCode 
             target="_blank" 
             className=" flex items-center justify-center gap-1 text-[var(--background)] bg-[var(--light_gray)] text-sm font-light py-1 px-4 rounded-lg group-hover:text-[var(--background)] group-hover:bg-[var(--highlight)] "
             >
-                <Image src="/githubDark.svg" width={20} height={20} alt="GitHub"  className="group-hover:fill-[var(--highlight)]"/>
+                <Image src="icons/githubDark.svg" width={20} height={20} alt="GitHub" style={{ width: "auto", height: "auto" }}  className="group-hover:fill-[var(--highlight)]"/>
             <span>source</span>
         </Link>
 

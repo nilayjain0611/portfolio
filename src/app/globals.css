@@ -26,6 +26,18 @@
 .wave {
   animation: wave 0.3s ease-in-out infinite;
 }
+/* Fix unwanted margins & scrolling issues caused by motion elements */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
 
 body {
   background: var(--background);

@@ -1,55 +1,57 @@
 import Image from 'next/image';
 import React from 'react'
+import FadeIn from './motion/FadeIn';
 
 const Skills = () => {
   
 const skills = [
   {
     name: "python",
-    image: "/python.svg",
+    image: "icons/python.svg",
   },
   {
     name: "django",
-    image: "/django.svg",
+    image: "icons/django.svg",
   },
   {
     name: "flask",
-    image: "/flask.svg",
+    image: "icons/flask.svg",
   },
   {
     name: "javascript",
-    image: "/js.svg",
+    image: "icons/js.svg",
   },
   {
     name: "postgreSql",
-    image: "/postgres.svg",
+    image: "icons/postgres.svg",
   },
   {
     name: "html",
-    image: "/html.svg",
+    image: "icons/html.svg",
   },
   {
     name: "nextjs",
-    image: "/nextjs.svg",
+    image: "icons/nextjs.svg",
   },
   {
     name: "reactjs",
-    image: "/react.svg",
+    image: "icons/react.svg",
   },
   {
     name: "tailwind",
-    image: "/tailwind.svg",
+    image: "icons/tailwind.svg",
   },
   {
     name: "git",
-    image: "/git.svg",
+    image: "icons/git.svg",
   },
   {
     name: "figma",
-    image: "/figma.svg",
+    image: "icons/figma.svg",
   },
 ];
   return (
+    <FadeIn>
     <section id='skills' className='mx-10 max-w-178 space-y-10 scroll-mt-20 scroll-smooth'>
           <h1 className="text-[var(--light_gray)] text-2xl font-semibold">skills<span className="text-[var(--highlight)]"> .</span></h1>
 
@@ -60,7 +62,8 @@ const skills = [
                 src={skill.image}
                 width={20}
                 height={20}
-                alt='python'
+                style={{ width: "auto", height: "auto" }} 
+                alt={skill.name}
               />
               
               {skill.name}
@@ -68,7 +71,8 @@ const skills = [
           ))}
         </div>
     </section>
-  )
+    </FadeIn>
+  );
 }
 
 export default Skills

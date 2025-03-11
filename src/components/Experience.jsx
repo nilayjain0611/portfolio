@@ -4,12 +4,14 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Education from "./Education";
 import Work from "./Work.jsx";
+import FadeIn from "./motion/FadeIn";
 
 
 const Experience = () => {
   const [activeSection, setActiveSection] = useState("work");
 
   return (
+    <FadeIn>
     <section id="experience" className="mx-10 md:w-178 max-w-178 space-y-10 scroll-mt-20">
       <h1 className="text-[var(--light_gray)] text-2xl font-semibold">
         experience<span className="text-[var(--highlight)]"> .</span>
@@ -66,6 +68,7 @@ const Experience = () => {
         </div>
       </div>
     </section>
+    </FadeIn>
   );
 };
 
