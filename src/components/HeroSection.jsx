@@ -63,7 +63,6 @@ export default function HeroSection() {
           </p>
         </div>
         </div>
-
       </section>
     </FadeIn>
   

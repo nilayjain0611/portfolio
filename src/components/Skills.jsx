@@ -54,7 +54,6 @@ const skills = [
     <FadeIn>
     <section id='skills' className='mx-10 max-w-178 space-y-10 scroll-mt-20 scroll-smooth'>
           <h1 className="text-[var(--light_gray)] text-2xl font-semibold">skills<span className="text-[var(--highlight)]"> .</span></h1>
-
           <div className="flex flex-wrap gap-5 font-light ">
           {skills.map((skill, index) => (
             <span key={index} className="font-light text-sm text-[var(--light_gray)]  flex gap-1 bg-[var(--card_color)] px-4 py-2 rounded-lg  border border-[var(--light_gray)]  hover:border-[var(--highlight)] transform transition-all duration-300">
